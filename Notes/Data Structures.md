@@ -12,10 +12,24 @@ A collection that contains no duplicate elements.
 
 | Methods       | Time Complexity |
 | ------------- | --------------- |
-| Add           | O(1)            |
-| Remove        | O(1)            |
-| Contains      | O(1)            |
+| add           | O(1)            |
+| remove        | O(1)            |
+| contains      | O(1)            |
 
 ## Queue
+
+#### PriorityQueue
+
+| Methods            | Time Complexity |
+| ------------------ | --------------- |
+| offer              | O(log n)        |
+| poll               | O(log n)        |
+| remove `from head` | O(log n)        |
+| add                | O(log n)        |
+| remove             | O(n)            |
+| contains           | O(n)            |
+| peek               | O(1)            |
+| element            | O(1)            |
+| size               | O(1)            |
 
 ## Map
