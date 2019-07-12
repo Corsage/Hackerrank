@@ -13,6 +13,7 @@ A collection that contains no duplicate elements.
 | Methods       | Time Complexity |
 | ------------- | --------------- |
 | Add           | O(1)            |
+| Remove        | O(1)            |
 | Contains      | O(1)            |
 
 ## Queue
