@@ -1,22 +1,20 @@
 # Stack
 
-## Definition
-
 A stack is an ordered collection of elements for which insertions and removals can only be done from one end (the top). This is a linear data structure usually described as FIFO (first in first out).
 
 A stack contains a limted set of operations:
-* `push` -- Adds a new element on the top of the stack.
-* `pop` -- Removes the top element from the stack.
-* `is_empty` -- Returns true if the stack is empty.
-* `size` -- Returns the current size of the stack.
+
+| Method        | Description                                 |
+| ------------- | ------------------------------------------- |
+| `push`        | Adds a new element on the top of the stack. |
+| `pop`         | Removes the top element from the stack.     |
+| `size`        | Returns the current size of the stack.      |
+| `is_empty`    | Returns true if the stack is empty.         |
+
 
 ## Time Complexity
 
 For all **standard operations** (push, pop, and size) the worst-case runtime is **O(1)**. The implementation of this data structure below showcases that these operations take constant time.
-
-The **copy constructor and assignment operator** are **O(n)** -- where n is the number of elements on the stack. This is because each element must be copied (copying one element takes constant time). 
-
-The **destructor** when a linked list is used (this implementation uses linked list) results in **O(n)** runtime. This is because we must transverse thru the remaining elements and free them one-by-one.
 
 | Method        | Time Complexity |
 | ------------- | --------------- |
@@ -24,6 +22,10 @@ The **destructor** when a linked list is used (this implementation uses linked l
 | pop           | O(1)            |
 | size          | O(1)            |
 | is_empty      | O(1)            |
+
+The **copy constructor and assignment operator** are **O(n)** -- where n is the number of elements on the stack. This is because each element must be copied (copying one element takes constant time). 
+
+The **destructor** when a linked list is used (this implementation uses linked list) results in **O(n)** runtime. This is because we must transverse thru the remaining elements and free them one-by-one.
 
 ## Implementation
 
