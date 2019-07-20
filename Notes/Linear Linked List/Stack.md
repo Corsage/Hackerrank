@@ -18,10 +18,10 @@ For all **standard operations** (push, pop, and size) the worst-case runtime is 
 
 | Method        | Time Complexity |
 | ------------- | --------------- |
-| push          | O(1)            |
-| pop           | O(1)            |
-| size          | O(1)            |
-| is_empty      | O(1)            |
+| `push`        | O(1)            |
+| `pop`         | O(1)            |
+| `size`        | O(1)            |
+| `is_empty`    | O(1)            |
 
 The **copy constructor and assignment operator** are **O(n)** -- where n is the number of elements on the stack. This is because each element must be copied (copying one element takes constant time). 
 
