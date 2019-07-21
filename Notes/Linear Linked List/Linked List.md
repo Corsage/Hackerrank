@@ -3,6 +3,7 @@
 This data structure uses linked storage, an alternative to sequential storage. Linked lists rely heavily on pointers and dynamically allocated memory. There are a wide variety of implementations as this is a very general and well known data structure.
 
 A linked list contains many operations, however this will cover the following:
+
 | Method        | Description                                 |
 | ------------- | ------------------------------------------- |
 | `insert`      | Adds a new element to the end of the list.  |
