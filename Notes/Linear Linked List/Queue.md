@@ -3,6 +3,7 @@
 A queue is an ordered collection of elements for whcih we can only insert an element at the back or remove an element from the front. This is a linear data structure usually described as FIFO ( first in first out).
 
 Since this data structure requires us to insert and remove on opposite ends, it is best implemented with a **doubly linked list**. A queue contains a limited set of operations:
+
 | Method        | Description                                    |
 | ------------- | ---------------------------------------------- |
 | `push`        | Adds a new element to the end of the queue.    |
