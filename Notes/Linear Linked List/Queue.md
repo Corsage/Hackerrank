@@ -44,13 +44,6 @@ This implementation of Queue uses a **doubly linked list**.
 ```cpp
 #include <iostream>
 
-typedef struct Node
-{
-  int data;
-  struct Node *prev;
-  struct Node *next;
-} Node;
-
 class Queue
 {
 private:
