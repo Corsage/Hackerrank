@@ -30,20 +30,35 @@ If the left/right node is null, we insert.
 Time complexity: Average is O(log n), however O(n) worst case -- degenerate tree.
 */
 Node *insert(Node *root, int data) {
-    Node *node = new Node(data);
-
     // If tree is empty.
     if (root == NULL)
     {
+        Node *node = new Node(data);
         root = node;
     }
     else if (data > root->data)
     {
-        (root->right != NULL) ? insert(root->right, data) : root->right = node;
+       if (root->right != NULL) 
+       {
+           insert(root->right, data)
+       }
+       else
+       {
+            Node *node = new Node(data);
+           root->right = node;
+       }
     }
     else
     {
-        (root->left != NULL) ? insert(root->left, data) : root->left = node;
+        if (root->left != NULL)
+        {
+            insert(root->left, data)
+        }
+        else
+        {
+            Node *node = new Node(data);
+            root->left = node;
+        }
     }
 
     return root;
